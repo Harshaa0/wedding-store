@@ -1,0 +1,54 @@
+.logo > img {
+    height: 20px;
+    width: 20px;
+  }
+
+.quote1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-spacing: 5px;
+    font-size: large;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+
+  .quote2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-spacing: 5px;
+    font-size: large;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .quote3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-spacing: 5px;
+    font-size: large;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+
+  .quote4{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-spacing: 5px;
+    font-size: large;
+    flex-direction: column;
+    gap: 10px;
+  }

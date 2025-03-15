@@ -1,0 +1,148 @@
+
+
+/* Navbar */
+.heading {
+    display: flex;
+    color : white;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.heading_login {
+    display: flex;
+    align-items: row;
+}
+
+.login{
+    right: 20px; top: 20px;
+    position: absolute;
+}
+.login a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.login a:hover {
+    color: #e1c699; /* Goldish color */
+}
+
+header {
+    background-color: transparent;
+    /* opacity: 0.1; */
+    padding: 0 0 0 0;  
+    text-align: center;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    font-display: column;
+    overflow:none;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 25px 0;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+    z-index: 20;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* Nav Menu */
+.nav_menue ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* flex: 2; */
+    gap: 75px;
+}
+
+.nav_menue ul li {
+    position: relative;
+    margin: 10px;
+}
+
+.nav_menue ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav_menue ul li a:hover {
+    color: #e1c699;
+}
+
+nav {
+    transition: background-color 0.4s ease-in-out, backdrop-filter 0.4s ease-in-out;
+}
+
+.nav_menue ul li a,
+.login a {
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+nav {
+    position: fixed; /* Keep navbar visible */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar turns white when scrolling up */
+nav.scrolled {
+    background-color: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Change text colors when navbar is white */
+nav.scrolled .nav_menue ul li a,
+nav.scrolled .login a,
+nav.scrolled .heading p {
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Change text to golden on hover */
+nav.scrolled .nav_menue ul li a:hover,
+nav.scrolled .login a:hover {
+    color: #e1c699;
+}
+
+

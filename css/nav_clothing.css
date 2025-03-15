@@ -1,0 +1,123 @@
+/* Navbar */
+.heading {
+  display: flex;
+  color: black; /* Default text color */
+  font-size: 3rem;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.heading_login {
+  display: flex;
+  align-items: row;
+}
+
+.login {
+  right: 20px;
+  top: 20px;
+  position: absolute;
+}
+
+.login a {
+  color: black; /* Black text when navbar is transparent */
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+}
+
+.login a:hover {
+  color: #e1c699; /* Gold hover effect */
+}
+
+header {
+  background-color: transparent;
+  padding: 0;
+  text-align: center;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Navbar Base */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  background: transparent;
+  /* backdrop-filter: blur(3px); */
+  z-index: 1000;
+  transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out,
+    box-shadow 0.4s ease-in-out;
+}
+
+/* Nav Menu */
+.nav_menue ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.nav_menue ul li {
+  position: relative;
+  margin: 10px;
+}
+
+.nav_menue ul li a {
+  color: black; /* Black text when navbar is transparent */
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav_menue ul li a:hover {
+  color: #e1c699;
+}
+
+/* Navbar is fully hidden when scrolling down */
+nav.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* Navbar appears with white background when scrolling up */
+nav.scrolled {
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Change text color when navbar is white */
+nav.scrolled .nav_menue ul li a,
+nav.scrolled .login a,
+nav.scrolled .heading p {
+  color: black;
+}
+
+nav.scrolled .nav_menue ul li a:hover,
+nav.scrolled .login a:hover {
+  color: #e1c699;
+}
+
+
+
+
+

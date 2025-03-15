@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.image-section {
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.groom {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.groom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.explore_groom{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%); /* Shifts the button left by 50% of its own width */
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font: bold; 
+    padding: 12px 24px;
+    font-size: 18px;
+    border: 1px solid white; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.explore_groom:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color:white;
+    border: 1px solid white;
+}
+

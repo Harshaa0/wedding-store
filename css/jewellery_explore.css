@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    scrollbar-width: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #e1c699;
+    border-radius: 10px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.jewellery_explore_section {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 8rem;
+    background-color: #f8f8f8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.jewellery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.jewellery-item {
+    background: white;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.jewellery-item a {
+    text-decoration: none; 
+}
+
+.jewellery-item a p {
+    text-decoration: none; 
+}
+
+.jewellery-item a h3 {
+    text-decoration: none; 
+}
+
+
+.jewellery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.view-details {
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #e1c699;
+    transition: width 0.4s ease-in-out;
+}
+
+.jewellery-item:hover .view-details {
+    width: 80%; 
+}
+
+.jewellery-item h3 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.jewellery-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+    .jewellery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .jewellery {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+}
+
